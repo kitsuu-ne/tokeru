@@ -17,6 +17,10 @@ return {
     ["ViewportFrame"] = {
         "BackgroundTransparency"
     },
+    ["ScrollingFrame"] = {
+        "BackgroundTransparency",
+        "ScrollBarImageTransparency"
+    },
     ["VideoFrame"] = {
         "BackgroundTransparency",
         "Volume"

@@ -1,0 +1,12 @@
+{
+  "name": "tokeru",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "tokeru": {
+        "$path": "src"
+      }
+    }
+  }
+}

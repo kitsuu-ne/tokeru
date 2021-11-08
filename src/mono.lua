@@ -41,7 +41,7 @@ return function(objects: {Instance})
             if index then
                 table.remove(allObject, index)
             end
-        end
+        end)
 
         object.Destroying:Connect(function()
             local index = table.find(allObject, object)
