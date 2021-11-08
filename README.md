@@ -63,7 +63,7 @@ tokeru(mono, tokeru["in"], 0.6) -- fade in, 0.6s
 tokeru can be installed with Wally, simply add tokeru in your Wally configuration for the project.
 
 ```toml
-tokeru = "octale/tokeru@0.01"
+tokeru = "octale/tokeru@0.0.2"
 ```
 
 ## License
