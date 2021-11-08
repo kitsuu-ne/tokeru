@@ -1,5 +1,16 @@
 -- tokeru.lua
 -- Fade in and out effects for everything
+-- example:
+--[[
+    local tokeru = require("tokeru")
+
+    local GUI = script.Parent.UI
+    local mono = tokeru.newMono({GUI})
+
+    tokeru(mono, tokeru.in, 0.3)
+    task.wait(0.3)
+    tokeru(mono, tokeru.out, 0.3)
+--]]
 -- @octale
 
 local TweenService = game:GetService("TweenService")
