@@ -1,9 +1,8 @@
 [package]
 name = "octale/tokeru"
 description = "Fading effect for technically everything"
-version = "0.0.2"
+version = "0.0.3"
+authors = ["octale <work@benku.me>", "7kayoh <nanako.matsumooo@outlook.jp>"]
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
 license = "MIT"
-
-[dependencies]
