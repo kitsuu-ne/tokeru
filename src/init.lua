@@ -5,6 +5,7 @@
 local TweenService = game:GetService("TweenService")
 
 local symbol = require(script.symbol)
+local mono = require(script.mono)
 local acceptableProperties = require(script.properties)
 
 local tokeru = {}
@@ -12,6 +13,8 @@ tokeru.__index = tokeru
 
 tokeru.in = symbol "in"
 tokeru.out = symbol "out"
+
+tokeru.newMono = mono
 
 tokeru._function = function(mono, direction, duration: number)
     assert(table.find({tokeru.in, tokeru.out}, direction), 
