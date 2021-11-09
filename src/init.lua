@@ -45,7 +45,7 @@ tokeru._function = function(mono, direction, duration: number, easingStyle: Easi
                         -- This is a huge pain D:
                         if object:IsA("Sound") or object:IsA("Fire") then
                             goal[property] = 0
-                        if object:IsA("Smoke") then
+                        elseif object:IsA("Smoke") then
                             goal[property] = false
                         elseif typeof(object[property]) == "NumberSequence" then
                             goal[property] = NumberSequence.new(1)

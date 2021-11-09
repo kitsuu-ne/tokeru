@@ -28,7 +28,7 @@ return {
     },
     ["Trail"] = {
         "Transparency"
-    }
+    },
     ["UIStroke"] = {
         "Transparency"
     },
