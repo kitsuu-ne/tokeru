@@ -11,6 +11,24 @@ return {
     ["Texture"] = {
         "Transparency",
     },
+    ["ParticleEmitter"] = {
+        "Transparency"
+    },
+    ["Beam"] = {
+        "Transparency"
+    },
+    ["Fire"] = {
+        "Size"
+    },
+    ["Sparkles"] = {
+        "Enabled"
+    },
+    ["Smoke"] = {
+        "Size"
+    },
+    ["Trail"] = {
+        "Transparency"
+    }
     ["UIStroke"] = {
         "Transparency"
     },

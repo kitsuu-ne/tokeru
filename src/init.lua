@@ -42,8 +42,13 @@ tokeru._function = function(mono, direction, duration: number, easingStyle: Easi
                     if direction == tokeru["in"] then
                         goal[property] = object:GetAttribute("tokeru" .. property)
                     else
-                        if object:IsA("Sound") then
+                        -- This is a huge pain D:
+                        if object:IsA("Sound") or object:IsA("Fire") then
                             goal[property] = 0
+                        if object:IsA("Smoke") then
+                            goal[property] = false
+                        elseif typeof(object[property]) == "NumberSequence" then
+                            goal[property] = NumberSequence.new(1)
                         else
                             goal[property] = 1
                         end
