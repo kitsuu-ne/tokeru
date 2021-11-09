@@ -28,10 +28,10 @@ tokeru.out = symbol "out"
 
 tokeru.newMono = mono
 
-tokeru._function = function(mono, direction, duration: number)
+tokeru._function = function(mono, direction, duration: number, easingStyle: EasingStyle?, easingDirection: EasingDirection?)
     assert(table.find({tokeru["in"], tokeru.out}, direction), 
         "direction must be either tokeru.in or tokeru.out")
-    local tweenInfo = TweenInfo.new(duration, Enum.EasingStyle.Linear)
+    local tweenInfo = TweenInfo.new(duration, easingStyle or Enum.EasingStyle.Linear, easingDirection or Enum.EasingDirection.Out)
     local tweens = {}
 
     for _, object in ipairs(mono._objects) do
