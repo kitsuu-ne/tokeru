@@ -11,6 +11,9 @@ return {
     ["Texture"] = {
         "Transparency",
     },
+    ["UIStroke"] = {
+        "Transparency"
+    },
     ["Frame"] = {
         "BackgroundTransparency"
     },
