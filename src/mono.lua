@@ -7,7 +7,7 @@ local function initialize(object: Instance)
     for index, value in pairs(acceptableProperties) do
         if object:IsA(index) then
             for _, property in ipairs(value) do
-                object:SetAttribute("tokeru." .. property, tonumber(object[property]))
+                object:SetAttribute("tokeru" .. property, tonumber(object[property]))
             end
             break
         end
